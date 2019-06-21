@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/list_item_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_business_notification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Penny Cohen has submitted Entry 1/7 for Post REALnews"
+            android:textColor="@color/black"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/txt_business_notification_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Awaiting for Approvel"
+            android:textAllCaps="false"
+            android:textColor="@color/Orange"
+            android:textSize="16sp"
+            />
+
+        <TextView
+            android:id="@+id/txt_business_notification_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20 Nov 2018"
+            android:textAllCaps="true"
+            android:textColor="@color/grey_color_light"
+            android:textSize="16sp"
+            android:layout_marginBottom="10dp"/>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="0dp"
+            android:background="@color/grey_color_light"></View>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

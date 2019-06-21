@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/container_popup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+       android:background="@drawable/shape_white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/relative_list"
+            android:layout_below="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_detail_img"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/boy"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                />
+
+            <ImageView
+                android:id="@+id/frwd_arrow"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/icons_more"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_centerVertical="true"/>
+            <LinearLayout
+                android:id="@+id/linear_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/profile_detail_img"
+                android:layout_toLeftOf="@id/frwd_arrow"
+
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical"
+                >
+
+
+                <TextView
+                    android:id="@+id/title_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Betty Cohen"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="5dp"
+android:visibility="gone"
+                    android:textSize="16sp"
+                    />
+
+                <TextView
+                    android:id="@+id/profile_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kenneth Moody"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="1dp"
+
+                    android:textSize="14sp"
+                    />
+
+
+                <TextView
+                    android:id="@+id/list_location"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_height="wrap_content"
+                    android:text="REALNEWS"
+                    android:textSize="10sp"
+                    android:textColor="@color/colorPrimaryDark"/>
+
+
+
+                <TextView
+                    android:id="@+id/requirement_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(Pic of Accicedent on 98 and Holiday)"
+
+                    android:textSize="10sp"
+                    android:textColor="@color/red"
+
+                    android:layout_marginRight="10dp"/>
+
+
+
+
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_below="@id/linear_detail"
+                android:id="@+id/category_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/profile_detail_img"
+                android:layout_toLeftOf="@+id/frwd_arrow"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="20dp"
+                android:textColor="@color/Dark_Gray"
+                android:text="Upto 10Pics,Per Post:$1.99 "
+                android:textSize="15sp"/>
+
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

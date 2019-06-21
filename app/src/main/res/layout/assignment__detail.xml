@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/list_item_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/header" />
+
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:fillViewport="false">
+
+
+        <LinearLayout
+            android:id="@+id/linear_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_detail_img"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/boy"
+                    app:civ_border_color="#FF000000"
+                    app:civ_border_width="1dp" />
+
+                <LinearLayout
+                    android:id="@+id/linear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/profile_detail_img"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/user_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="100dp"
+                        android:text="Kenneth Moody"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/profile_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Realnews"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="13sp" />
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/total_budget_txt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Total Buddget:"
+                            android:textColor="@color/grey_color_light"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/price_txt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="$35.00"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginEnd="5dp">
+
+                            <TextView
+                                android:id="@+id/per_pic_txt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Per Picture:"
+                                android:textColor="@color/grey_color_light"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/pic_price_txt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:text="$5.00"
+                                android:textColor="@color/black"
+                                android:textSize="12sp"/>
+
+                            <TextView
+                                android:id="@+id/pic_need_txt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:text="Pictire UPTO Needed:"
+                                android:textColor="@color/grey_color_light"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/total_pic_txt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="15"
+                                android:textAllCaps="false"
+                                android:textColor="@color/black"
+                                android:textSize="12sp" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:textSize="12sp"
+                    android:textColor="@color/grey_color_light"
+                    android:textAllCaps="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:text="10 Feb 18, 2:30"/>
+
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/description_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linear_list"
+                android:layout_marginLeft="15dp"
+                android:text="Job Description:"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/take_pic_view"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/description_txt"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/grey_color_light" />
+
+
+            <TextView
+                android:id="@+id/accident_description_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/take_pic_view"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:text="Please take picture of the accident on hwy98,you can submit upto 15 Picture but we are  only going  to Choose seven pictures. "
+                android:textColor="@color/black" />
+
+
+            <TextView
+                android:id="@+id/job_note_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/accident_description_txt"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:text="Job Note:"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/note_view"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+
+                android:layout_below="@+id/job_note_txt"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/grey_color_light" />
+
+
+            <TextView
+                android:id="@+id/need_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/note_view"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:text="We need Pictures asap."
+
+                android:textColor="@color/black" />
+
+
+            <RelativeLayout
+                android:id="@+id/entries_relative"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/relative_profile"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/entries_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Your entries(2)"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+
+                <View
+                    android:id="@+id/note3_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/entries_txt"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/grey_color_light" />
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/entry_recycle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/entries_txt"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:nestedScrollingEnabled="false" />
+
+
+                <TextView
+                    android:id="@+id/txt_error_msg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="No Record Found"
+                    android:textColor="@color/black"
+                    android:textSize="22sp"
+                    android:visibility="gone" />
+
+
+                <View
+                    android:id="@+id/note2_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/entry_recycle"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/grey_color_light" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/note2_view"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/note2_view"
+                        android:layout_marginLeft="15dp"
+                        android:layout_weight="1"
+                        android:text="Job will expiry in 2 Days"
+                        android:textColor="@color/red"
+                        android:textSize="12sp" />
+
+
+                    <TextView
+                        android:id="@+id/post_entry_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/note2_view"
+                        android:layout_marginRight="15dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bt_blue_2x"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="Post Entry"
+                        android:textColor="@color/white" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

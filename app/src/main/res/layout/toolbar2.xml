@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/relative">
+
+
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/tab_map_active_2x"
+                android:gravity="center_horizontal"
+                android:scaleType="fitXY"
+                android:layout_toLeftOf="@+id/viewMap"
+                android:id="@+id/tab_map_img"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"/>
+
+
+
+
+
+        <View
+            android:id="@+id/viewMap"
+            android:layout_width="0.5dp"
+            android:layout_marginBottom="3dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@color/gray" />
+
+
+
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/tab_list_2x"
+                android:gravity="center_horizontal"
+                android:scaleType="fitXY"
+                android:layout_toRightOf="@+id/viewMap"
+                android:id="@+id/tab_list_img"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true">
+
+
+
+
+
+
+            </ImageView>
+
+
+
+      </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

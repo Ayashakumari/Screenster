@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightgray">
+
+    <ScrollView
+        android:layout_below="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_weight="1"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/shape_white"
+                        android:id="@+id/relative_compaign">
+
+                        <TextView
+                            android:id="@+id/txt_compaign_state"
+                            android:layout_marginTop="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Campaign"
+                            android:textSize="18sp"
+                            android:layout_centerHorizontal="true"
+                            android:textColor="@color/black"/>
+
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_centerVertical="true"
+                            android:layout_centerHorizontal="true"
+                            android:id="@+id/compaign_img"
+                            android:src="@mipmap/ic_campaign"/>
+                        <TextView
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/txt_compaign_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="20"
+                            android:textSize="18sp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_below="@+id/compaign_img"
+                            android:textColor="@color/black"/>
+
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_weight="1"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/shape_white"
+                        android:id="@+id/relative_approve">
+
+                        <TextView
+                            android:id="@+id/txt_approved_state"
+                            android:layout_marginTop="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Approved"
+                            android:textSize="18sp"
+                            android:layout_centerHorizontal="true"
+                            android:textColor="@color/black"/>
+
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_centerVertical="true"
+                            android:layout_centerHorizontal="true"
+                            android:id="@+id/approve_img"
+                            android:src="@mipmap/ic_approved"/>
+                        <TextView
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/txt_approved_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="5"
+                            android:textSize="18sp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_below="@+id/approve_img"
+                            android:textColor="@color/black"/>
+
+
+                    </RelativeLayout>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_weight="1"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/shape_white"
+                        android:id="@+id/rejected_relative">
+
+                        <TextView
+                            android:id="@+id/txt_rejected_state"
+                            android:layout_marginTop="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Rejected"
+                            android:textSize="18sp"
+                            android:layout_centerHorizontal="true"
+                            android:textColor="@color/black"/>
+
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_centerVertical="true"
+                            android:layout_centerHorizontal="true"
+                            android:id="@+id/rejected_img"
+                            android:src="@mipmap/ic_rejected"/>
+                        <TextView
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/txt_rejected_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="20"
+                            android:textSize="18sp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_below="@+id/rejected_img"
+                            android:textColor="@color/black"/>
+
+
+                    </RelativeLayout>
+
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_weight="1"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/shape_white"
+                        android:id="@+id/spent_relative">
+
+                        <TextView
+                            android:id="@+id/txt_spent_state"
+                            android:layout_marginTop="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="spent"
+                            android:textSize="18sp"
+                            android:layout_centerHorizontal="true"
+                            android:textColor="@color/black"/>
+
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_centerVertical="true"
+                            android:layout_centerHorizontal="true"
+                            android:id="@+id/spent_img"
+                            android:src="@mipmap/ic_spent"/>
+                        <TextView
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/txt_spent_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="$240"
+                            android:textSize="18sp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_below="@+id/spent_img"
+                            android:textColor="@color/black"/>
+
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+
+
+            <Button
+                android:layout_marginBottom="100dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/rectangle_blue"
+                android:layout_marginEnd="60dp"
+                android:layout_marginRight="60sp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="50dp"
+                android:textSize="14sp"
+                android:id="@+id/post_campaign"
+                android:text="Post Your Campaign Today!"
+                android:textColor="@color/white"
+                android:textStyle="normal"
+                android:textAllCaps="false"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>

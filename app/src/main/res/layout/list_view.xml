@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#EBE9E9">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:minHeight="50dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        android:visibility="gone"
+        android:id="@+id/search_layout"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/shape_white"
+
+        >
+        <EditText
+            android:id="@+id/locationSearch"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="match_parent"
+            android:textColor="#000000"
+            android:textColorHint="#000000"
+            android:imeOptions="actionDone"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:inputType="text|textCapSentences"
+            android:layout_toRightOf="@+id/search_button"
+            android:layout_toEndOf="@+id/search_button"
+            android:layout_marginRight="5dp"
+            android:textSize="16sp"
+
+            android:layout_marginLeft="5dp"
+
+            android:layout_centerVertical="true"
+            android:hint="Search" />
+
+
+        <ImageView
+            android:id="@+id/search_button"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/search_icon"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="15dp"
+            android:layout_centerVertical="true"
+            android:onClick="onMapSearch"
+            android:text="Search" />
+    </RelativeLayout>
+
+
+
+
+
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:textColor="@color/black"
+    android:gravity="center"
+    android:textSize="18sp"
+    android:visibility="gone"
+    android:id="@+id/error_msg"
+    android:textStyle="bold"
+    android:text="No Record Found"/>
+
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/list_recycle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       >
+
+    </android.support.v7.widget.RecyclerView>
+</RelativeLayout>
+
+</LinearLayout>

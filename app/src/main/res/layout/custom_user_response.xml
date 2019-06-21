@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:minHeight="70dp"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/swipe"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rel_chat_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/chat_profile_img"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="top"
+                android:src="@drawable/boy"/>
+
+
+            <TextView
+                android:id="@+id/week_days"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="last 2 mins ago"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/grey_color_light"
+                android:layout_alignParentRight="true"/>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/chat_profile_img"
+                android:layout_toLeftOf="@id/week_days"
+                android:id="@+id/penyy_relative"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/user_response_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Penny Cohen"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/txt_description"
+                    android:layout_below="@+id/user_response_name"
+                    android:text="has submitted 4 entries"
+                    android:textColor="@color/grey_color_light"
+                    android:textSize="14sp"/>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:id="@+id/approved_txt"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/chat_profile_img"
+                android:layout_below="@+id/penyy_relative"
+                android:text="Approved: 2"
+                android:textColor="@color/green"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/approved_txt"
+                android:id="@+id/rejected_txt"
+                android:layout_below="@+id/penyy_relative"
+                android:text="Rejected: 2"
+                android:textColor="@color/red"
+                android:textSize="14sp"/>
+
+
+
+
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_below="@+id/swipe"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/grey_color_light"/>
+
+
+
+
+
+
+</RelativeLayout>

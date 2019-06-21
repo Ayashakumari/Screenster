@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+       <include layout="@layout/header"
+           android:id="@+id/header"/>
+
+    <ScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+            
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_upload"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="10dp"
+                android:src="@mipmap/uploadpic"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="40dp"
+                android:background="@mipmap/textbox"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:id="@+id/create_yourname"
+                android:hint=" Your Name"
+                android:inputType="textCapSentences"
+                android:textColorHint="@color/normalblack"
+                android:layout_gravity="start"
+                android:paddingLeft="15dp"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@mipmap/textbox"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:textColorHint="@color/normalblack"
+                android:inputType="textEmailAddress"
+                android:id="@+id/create_emailaddress"
+                android:hint=" Email address"
+                android:layout_gravity="start"
+                android:paddingLeft="15dp"
+                android:layout_marginTop="13dp"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@mipmap/textbox"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:id="@+id/create_password"
+                android:textColorHint="@color/normalblack"
+                android:inputType="textPassword"
+                android:hint=" Password"
+                android:layout_gravity="start"
+                android:paddingLeft="15dp"
+                android:layout_marginTop="13dp"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@mipmap/textbox"
+                android:layout_marginLeft="35dp"
+                android:inputType="textPassword"
+                android:hint="Confirm password"
+                android:layout_marginRight="35dp"
+                android:id="@+id/create_confirmpassword"
+                android:textColorHint="@color/normalblack"
+                android:layout_gravity="start"
+                android:paddingLeft="15dp"
+                android:textCursorDrawable="@drawable/color_cursor"
+                android:layout_marginTop="13dp"
+                />
+
+            <RelativeLayout
+                android:id="@+id/layout"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"                    android:layout_below="@+id/business_details_email"
+                android:layout_marginTop="10dp"
+                android:background="@mipmap/textbox">
+
+                <EditText
+                    android:id="@+id/txt_crete_country_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginStart="10dp"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:maxLength="4"
+                    android:text="+1"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/normalblack"
+                    android:textSize="18sp" />
+
+                <View
+                    android:id="@+id/view1"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/txt_crete_country_code"
+                    android:background="@color/grey_color_light" />
+
+                <EditText
+                    android:id="@+id/edt_create_mobile_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_toEndOf="@+id/view1"
+                    android:layout_toRightOf="@+id/view1"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint=" Enter Mobile Number"
+                    android:inputType="phone"
+                    android:paddingLeft="5dp"
+                    android:maxLength="15"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/normalblack"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/bt_blue_2x"
+                android:layout_marginRight="35dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginBottom="30dp"
+                android:text="Continue"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:id="@+id/create_continue"/>
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
+
+
+
+
+

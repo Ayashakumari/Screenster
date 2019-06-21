@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:id="@+id/header_include">
+            <include layout="@layout/header"></include>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical">
+
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+
+                    <!--<de.hdodenhof.circleimageview.CircleImageView-->
+                    <!--android:id="@+id/upload_pic"-->
+                    <!--android:layout_width="80dp"-->
+                    <!--android:layout_height="80dp"-->
+                    <!--android:src="@mipmap/upload_pic"-->
+                    <!--android:layout_gravity="center_horizontal"/>-->
+
+
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginLeft="35dp"
+                        android:layout_marginRight="35dp"
+                        android:background="@drawable/memberlogin"
+                        android:paddingLeft="10dp"
+                        android:layout_marginTop="30dp"
+                        android:textSize="14sp"
+                        android:id="@+id/contact_name"
+                        android:hint="Name"
+                        android:textColorHint="@color/lightblack"
+                        android:inputType="textCapSentences"
+                        />
+
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginLeft="35dp"
+                        android:layout_marginRight="35dp"
+                        android:background="@drawable/memberlogin"
+                        android:paddingLeft="10dp"
+                        android:maxLines="1"
+                        android:layout_marginTop="10dp"
+                        android:textSize="14sp"
+                        android:id="@+id/contact_email"
+                        android:hint="Email"
+                        android:textColorHint="@color/lightblack"
+                        android:inputType="textEmailAddress"
+                        />
+
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginLeft="35dp"
+                        android:layout_marginRight="35dp"
+                        android:background="@drawable/memberlogin"
+                        android:paddingLeft="10dp"
+                        android:maxLines="1"
+                        android:maxLength="15"
+                        android:layout_marginTop="10dp"
+                        android:textSize="14sp"
+                        android:id="@+id/contact_mobile_number"
+                        android:hint="Mobile number"
+                        android:textColorHint="@color/lightblack"
+                        android:inputType="number"
+                        />
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        android:layout_marginLeft="35dp"
+                        android:layout_marginRight="35dp"
+                        android:id="@+id/write_relative"
+                        android:background="@drawable/rectangle2"
+                        android:layout_marginTop="15dp"
+                        android:layout_above="@+id/btn_save"
+                        android:layout_marginBottom="20dp"
+                        android:layout_below="@+id/write2_txt">
+
+                    <EditText
+                        android:id="@+id/contact_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_above="@id/write_count_txt"
+                        android:inputType="textMultiLine|textCapSentences"
+                        android:background="@null"
+                        android:gravity="start"
+                        android:padding="20dp"
+                        android:singleLine="true"
+                        android:maxLength="250"
+                        android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/write_count_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentRight="true"
+                            android:text="0/250"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginRight="15dp"
+                            android:textColor="@color/black" />
+
+                    </RelativeLayout>
+
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:id="@+id/contact_bt_submit"
+                        android:layout_marginEnd="50dp"
+                        android:layout_marginStart="50dp"
+                        android:layout_marginTop="24dp"
+                        android:text="Submit"
+                        android:textSize="16sp"
+                        android:layout_marginBottom="30dp"
+                        android:textColor="@color/white"
+                        android:textAllCaps="false"
+                        android:background="@drawable/bt_blue_2x"
+                        />
+
+
+
+
+
+
+
+
+
+
+                </LinearLayout>
+            </ScrollView>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

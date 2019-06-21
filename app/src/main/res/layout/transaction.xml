@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include
+        layout="@layout/header"
+        android:id="@+id/header"/>
+    
+    <RelativeLayout
+        android:id="@+id/relative_send_bank"
+        android:layout_below="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@color/lightblue2">
+
+        <TextView
+            android:id="@+id/total_earn_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/send_to_bank_txt"
+            android:layout_alignBottom="@+id/send_to_bank_txt"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="10dp"
+            android:text="Total Earning: $4.50"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Balance: $0.00"
+            android:textSize="12sp"
+            android:padding="8dp"
+            android:visibility="gone"
+            android:layout_toLeftOf="@+id/send_to_bank_txt"
+            android:id="@+id/balance_bank_txt"
+            android:layout_marginRight="5dp"
+            android:textColor="@color/white"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:textSize="14sp"
+            android:text="Send to Bank"
+            android:paddingStart="7dp"
+            android:paddingLeft="7dp"
+            android:paddingRight="7dp"
+            android:paddingEnd="7dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:background="@drawable/rect_blue"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/white"
+            android:id="@+id/send_to_bank_txt" />
+
+
+    </RelativeLayout>
+    
+    
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal"
+            android:id="@+id/date_linear"
+            android:background="@color/Card_Grey"
+            android:layout_below="@+id/relative_send_bank">
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_centerVertical="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="From"
+                    android:layout_centerVertical="true"
+                    android:paddingTop="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:id="@+id/from_txt"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="MM/DD/YYYY"
+                    android:textColorHint="@color/black"
+                    android:textColor="@color/black"
+                    android:background="@drawable/shape_white"
+                    android:id="@+id/start_date"
+                    android:layout_toRightOf="@id/from_txt"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"/>
+
+
+            </RelativeLayout>
+
+
+
+
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:id="@+id/view_relative"
+                android:layout_centerInParent="true"/>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/table_relative"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="To"
+                    android:paddingTop="10dp"
+                    android:paddingRight="10dp"
+                    android:textSize="15sp"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/white"
+                    android:id="@+id/to_txt"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MM/DD/YYYY"
+                    android:id="@+id/end_date"
+                    android:textColor="@color/black"
+                    android:background="@drawable/shape_white"
+
+                    android:layout_toRightOf="@id/to_txt"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"/>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/date_relative"
+            android:background="@color/Card_Grey"
+            android:layout_centerVertical="true"
+            android:layout_below="@+id/date_linear"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:text="Date"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="Description"
+                android:id="@+id/description_txt"
+                android:textColor="@color/white"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:text="Amount"
+                android:textColor="@color/white"/>
+
+        </RelativeLayout>
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:id="@+id/transaction_recycle"
+            android:layout_below="@+id/date_relative"/>
+
+
+
+
+</RelativeLayout>

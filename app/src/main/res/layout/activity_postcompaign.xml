@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+
+       <include layout="@layout/header"
+        android:id="@+id/header"/>
+
+
+
+    <ScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal">
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/memberlogin"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:id="@+id/compaign_name"
+            android:inputType="text"
+            android:hint=" Compaign Name"
+            android:textColorHint="@color/black"
+            android:layout_gravity="start"
+            android:paddingLeft="15dp"
+            android:textSize="15sp"
+            />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/memberlogin"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:id="@+id/compaign_entry"
+            android:inputType="number"
+            android:textSize="15sp"
+            android:hint=" Number of Entry Required"
+            android:textColorHint="@color/black"
+            android:layout_gravity="start"
+            android:paddingLeft="15dp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/memberlogin"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:id="@+id/compaign_price"
+            android:inputType="number"
+            android:hint=" Price Per Entry"
+            android:textColorHint="@color/black"
+            android:layout_gravity="start"
+            android:textSize="15sp"
+            android:paddingLeft="15dp"
+            />
+
+        <TextView
+            android:id="@+id/budget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:text="Total Budget $0.00"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/compaign_location"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="start"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/memberlogin"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:paddingBottom="10dp"
+            android:text="Select location Of Compaign"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/memberlogin"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginTop="10dp"
+            android:text="Within Radius"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:id="@+id/compaign_radius"
+           />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            >
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/memberlogin"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:text="Expiry Date"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="start"
+            android:paddingLeft="15dp"
+            android:gravity="start"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:id="@+id/compaign_date"
+            android:paddingTop="15dp"/>
+
+            <!--<EditText-->
+                <!--android:layout_width="200dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:id="@+id/in_date"-->
+                <!--android:background="null" />-->
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/memberlogin"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginTop="10dp"
+            android:text="Accept Entry Before Expiry"
+            android:layout_gravity="start"
+            android:paddingLeft="15dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:id="@+id/compaign_expiry"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/memberlogin"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="start"
+            android:paddingLeft="15dp"
+            android:textColorHint="@color/black"
+            android:hint="Notes for User"
+            android:gravity="start"
+            android:textSize="15sp"
+            android:id="@+id/compaign_notesuser"
+            android:paddingTop="15dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:id="@+id/write_relative"
+            android:background="@drawable/rectangle"
+            android:layout_marginTop="5dp"
+            android:layout_above="@+id/btn_save"
+            android:layout_marginBottom="20dp"
+            android:layout_below="@+id/write2_txt">
+
+
+            <EditText
+                android:id="@+id/write_some_txt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@id/write_count_txt"
+                android:inputType="textMultiLine|textCapSentences"
+                android:background="@null"
+                android:gravity="start"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp"
+                android:singleLine="true"
+                android:maxLength="250"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:id="@+id/write_count_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:text="0/250"
+                android:layout_marginBottom="8dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/black" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Post Compaign"
+            android:id="@+id/btn_post"
+            android:layout_marginBottom="150dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginLeft="35dp"
+            android:background="@drawable/bt_blue_2x"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
